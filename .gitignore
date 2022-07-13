@@ -1,3 +1,6 @@
+#############################################
+############### APP (Angular) ###############
+
 # Compiled output
 /app/dist
 /app/tmp
@@ -39,3 +42,43 @@
 # System files
 /app/.DS_Store
 /app/Thumbs.db
+
+
+#############################################
+############## SERVER (Nest.js) #############
+
+# compiled output
+/server/dist
+/server/node_modules
+
+# Logs
+/server/logs
+/server/*.log
+/server/npm-debug.log*
+/server/pnpm-debug.log*
+/server/yarn-debug.log*
+/server/yarn-error.log*
+/server/lerna-debug.log*
+
+# OS
+/server/.DS_Store
+
+# Tests
+/server/coverage
+/server/.nyc_output
+
+# IDEs and editors
+/server/.idea
+/server/.project
+/server/.classpath
+/server/.c9/
+/server/*.launch
+/server/.settings/
+/server/*.sublime-workspace
+
+# IDE - VSCode
+/server/.vscode/*
+/server/!.vscode/settings.json
+/server/!.vscode/tasks.json
+/server/!.vscode/launch.json
+/server/!.vscode/extensions.json
