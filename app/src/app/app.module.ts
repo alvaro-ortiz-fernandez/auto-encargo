@@ -1,3 +1,5 @@
+import { OrdersModule } from './orders/orders.module';
+import { AuthModule } from './auth/auth.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,9 +12,27 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuthModule,
+    OrdersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+/*
+VENTANAS:
+  - HOME
+
+  - LISTADO DE TRABAJADORES
+  - DETALLE DE TRABAJADOR
+
+  - LISTADO DE ENCARGOS
+  - DETALLE DE ENCARGO
+
+  - LOGIN
+  - REGISTRO
+
+*/
