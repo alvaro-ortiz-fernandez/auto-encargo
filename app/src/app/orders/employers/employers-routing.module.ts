@@ -11,12 +11,12 @@ const routes: Routes = [
     component: EmployerListingComponent
   },
   {
-    path: 'encargo/:id',
+    path: 'encargos/encargo/:id',
     pathMatch: 'full',
     component: EmployerDetailComponent
   },
   {
-    path: 'nuevo',
+    path: 'encargos/nuevo',
     pathMatch: 'full',
     component: EmployerPostingComponent
   }

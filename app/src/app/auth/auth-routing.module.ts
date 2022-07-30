@@ -5,12 +5,17 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'login',
+    path: '',
+    pathMatch: 'full',
+    redirectTo: '/acceso/login'
+  },
+  {
+    path: 'acceso/login',
     pathMatch: 'full',
     component: LoginComponent
   },
   {
-    path: 'signin',
+    path: 'acceso/registro',
     pathMatch: 'full',
     component: SignInComponent
   }

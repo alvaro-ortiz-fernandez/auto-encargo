@@ -1,3 +1,4 @@
+import { EmployersRoutingModule } from './employers-routing.module';
 import { EmployersService } from './employers.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -6,16 +7,17 @@ import { EmployerDetailComponent } from './employer-listing/employer-detail/empl
 import { EmployerPostingComponent } from './employer-posting/employer-posting.component';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  providers: [
-    EmployersService
-  ],
   declarations: [
     EmployerListingComponent,
     EmployerDetailComponent,
     EmployerPostingComponent
+  ],
+  imports: [
+    CommonModule,
+    EmployersRoutingModule
+  ],
+  providers: [
+    EmployersService
   ]
 })
 export class EmployersModule { }

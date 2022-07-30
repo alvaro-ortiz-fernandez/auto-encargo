@@ -1,3 +1,4 @@
+import { WorkersRoutingModule } from './workers-routing.module';
 import { WorkersService } from './workers.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -12,7 +13,8 @@ import { WorkerPostingComponent } from './worker-posting/worker-posting.componen
     WorkerPostingComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    WorkersRoutingModule
   ],
   providers: [
     WorkersService
