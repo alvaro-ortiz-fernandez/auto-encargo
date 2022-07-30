@@ -1,3 +1,4 @@
+import { GlobalModule } from './global/global.module';
 import { OrdersModule } from './orders/orders.module';
 import { AuthModule } from './auth/auth.module';
 import { NgModule } from '@angular/core';
@@ -13,10 +14,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    GlobalModule,
     OrdersModule,
     AuthModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

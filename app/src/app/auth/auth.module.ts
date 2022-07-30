@@ -12,6 +12,10 @@ import { SignInComponent } from './sign-in/sign-in.component';
   imports: [
     AuthRoutingModule
   ],
+  exports: [
+    LoginComponent,
+    SignInComponent
+  ],
   providers: [
     AuthService
   ]
