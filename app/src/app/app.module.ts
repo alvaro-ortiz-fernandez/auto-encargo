@@ -13,26 +13,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthModule,
-    OrdersModule
+    OrdersModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-
-/*
-VENTANAS:
-  - HOME
-
-  - LISTADO DE TRABAJADORES
-  - DETALLE DE TRABAJADOR
-
-  - LISTADO DE ENCARGOS
-  - DETALLE DE ENCARGO
-
-  - LOGIN
-  - REGISTRO
-
-*/
