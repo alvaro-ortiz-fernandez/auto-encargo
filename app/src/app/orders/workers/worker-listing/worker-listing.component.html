@@ -1,1 +1,9 @@
-<p>worker-listing works!</p>
+<h5><a routerLink="/">Home</a></h5>
+<h5><a routerLink="/servicios/nuevo">/servicios/nuevo</a></h5>
+
+<h2>lISTADO DE SERVICIOS</h2>
+<ul>
+    <li *ngFor="let worker of workersService.getWorkers()">
+        <h5><a [routerLink]="'/servicios/servicio/' + worker.id">{{ worker.name }}</a></h5>
+    </li>
+</ul>

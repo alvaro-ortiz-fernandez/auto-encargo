@@ -1,1 +1,9 @@
-<p>employer-listing works!</p>
+<h5><a routerLink="/">Home</a></h5>
+<h5><a routerLink="/encargos/nuevo">/encargos/nuevo</a></h5>
+
+<h2>lISTADO DE ENCARGOS</h2>
+<ul>
+    <li *ngFor="let employer of employersService.getEmployers()">
+        <h5><a [routerLink]="'/encargos/encargo/' + employer.id">{{ employer.name }}</a></h5>
+    </li>
+</ul>

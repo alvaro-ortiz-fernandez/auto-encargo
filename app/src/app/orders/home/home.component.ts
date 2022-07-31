@@ -1,3 +1,5 @@
+import { WorkersService } from './../workers/workers.service';
+import { EmployersService } from './../employers/employers.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(protected employersService: EmployersService, protected workersService: WorkersService) { }
 
   ngOnInit(): void {
   }

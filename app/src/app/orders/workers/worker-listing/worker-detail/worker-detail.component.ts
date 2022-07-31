@@ -1,4 +1,7 @@
+import { WorkersService } from './../../workers.service';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Worker } from '../../worker.model';
 
 @Component({
   selector: 'app-worker-detail',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkerDetailComponent implements OnInit {
 
-  constructor() { }
+  protected worker?: Worker;
+
+  constructor(private route: ActivatedRoute, protected workersService: WorkersService) { }
 
   ngOnInit(): void {
+    this.worker = this.workersService.getWorker(this.route.snapshot.params['id']);
   }
 
 }
