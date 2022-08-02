@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "declaration": true,
+    "strict": true,
+    "declaration": false,
     "removeComments": true,
+    "noImplicitOverride": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
@@ -15,7 +17,13 @@
     "strictNullChecks": false,
     "noImplicitAny": false,
     "strictBindCallApply": false,
-    "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "downlevelIteration": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "strictPropertyInitialization": false
   }
 }
